@@ -1,0 +1,69 @@
+.body {
+    background-color: #F2F3F6;
+    margin: 0;
+}
+
+.header {
+    background-color: #BFD6E9;
+    height: 100px;
+    box-shadow:  0px 2px lightgray;
+    margin: -8px -8px 0px -8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meniu {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+[class^=buton-meniu] {
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 35.5px 25px 35.5px 25px;
+    
+}
+
+[class^=buton-meniu]:hover {
+    background-color: #DEEAF1;
+}
+
+.buton-meniu-acasa, .buton-meniu-acasa:hover {
+    background-color: #F2F3F6;
+}
+.sageata {
+    object-fit: scale-down;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.logo {
+    object-fit: scale-down;
+    height: 100px;
+}
+
+.continut {
+    height: 500px;
+    background-color: #F2F3F6;
+    margin: 0px -8px 0px -8px;
+}
+
+.footer {
+    background-color: #365A86;
+    margin: 0px -8px -8px -8px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+.footer > p {
+    margin: 0;
+}
