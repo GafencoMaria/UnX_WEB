@@ -12,6 +12,9 @@
     justify-content: space-between;
 }
 
+.meniu-toggle {
+    display: none;
+}
 .meniu {
     list-style: none;
     display: flex;
@@ -49,7 +52,8 @@
 
 .logo {
     object-fit: scale-down;
-    height: 100px;
+    height: 80px;
+    padding-top: 10px;
 }
 
 .continut {
@@ -63,6 +67,23 @@
     grid-column-start: 2;
     grid-column-end: 6;
     column-span: 4fr;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.graf3 {
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.graf1 {
+    margin-bottom: 50px;
+}
+
+.graf4 {
+    height: 500px;
+    margin-bottom: 50px;
 }
 
 .noutati {
@@ -100,10 +121,133 @@
     padding: 10px 30px 10px 30px;
 }
 
-.footer > p:hover {
+.rights:hover {
+    color: white;
+}
+
+.contact:hover {
     color: #DEEAF1;
 }
 
 .footer > p {
     margin: 0;
+}
+
+[class^=desc-] {
+    border: 0;
+    text-align: center;
+    font-size: 15px;
+    background-color: #365A86;
+    color: white;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+[class^=desc-]:hover {
+    background-color: #BFD6E9;
+    color: black;
+}
+
+[class^=desc-]:active {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 1790px) {
+    .graf3 {
+        height: 300px;
+    }
+    
+    .graf1 {
+        height: 400px;
+    }
+    
+    .graf4 {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .continut {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 50px 50px;
+    }
+    
+    .statistici {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin: 0px;
+    }
+    
+    .noutati {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        margin: 0px 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .continut {
+        display: block;
+    } 
+
+    .descarca {
+        text-align: center;
+    }
+
+    .statistici {
+        padding: 40px 60px;
+    }
+
+    .graf3 {
+        height: 400px;
+    }
+    
+    .graf4 {
+        height: 500px;
+    }
+
+    .meniu {
+        display: none;
+    }
+
+    .meniu-toggle{
+        display: block;
+        height: 80px;
+    }
+
+    [class^=buton-meniu] {
+        padding: 10px 60px;
+    }
+
+    [class^=buton-meniu]:hover {
+        background-color: #BFD6E9;
+    }
+
+    [class^=buton-meniu]:active {
+        background-color: #DEEAF1;
+    }
+
+    [class^=desc-]:hover {
+        background-color: #365A86;
+        color: white;
+    }
+    
+    [class^=desc-]:active {
+        background-color: #DEEAF1;
+        color: black;
+    }
+
+    @media (max-width: 1010px) {
+        .statistici {
+            padding: 0;
+        }
+        .graf3 {
+            height: 300px;
+        }
+        
+        .graf4 {
+            height: 350px;
+        }
+    }
 }
