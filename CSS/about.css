@@ -83,7 +83,7 @@ body {
 }
 
 /* Content Styles */
-.container {
+.container-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
