@@ -31,16 +31,16 @@
     padding: 38.5px 25px 38.5px 25px;
 }
 
-[class^=buton-meniu]:hover {
+/* .meniu > button:hover {
     background-color: #DEEAF1;
-}
+} */
 
 [class^=buton-meniu]:active {
     background-color: #F2F3F6;
     border: #365A86;
 }
 
-.buton-meniu-acasa {
+.buton-on {
     background-color: #DEEAF1;
 }
 
@@ -156,6 +156,54 @@
     color: black;
 }
 
+.ponturi {
+    display: block;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.titlu-ponturi {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.continut-ponturi {
+    display: flex;
+}
+
+.titlu-p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pont {
+    display: block;
+    background-color: #365A86;
+    color: white;
+    margin: 20px 80px;
+    padding: 10px 30px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.titlu-p:hover, .continut-p:hover {
+    color: white;
+}
+
+.alte-siteuri {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px 120px;
+}
+
+.links-r {
+    margin: 0px 120px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
 @media (max-width: 1790px) {
     .graf3 {
         height: 300px;
@@ -186,6 +234,15 @@
         grid-column-start: 5;
         grid-column-end: 7;
         margin: 0px 50px;
+    }
+
+    .continut-ponturi {
+        display: block;
+        text-align: center;
+    }
+
+    .pont {
+        width: auto;
     }
 }
 
