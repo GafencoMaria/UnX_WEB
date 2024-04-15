@@ -176,6 +176,7 @@
     display: block;
     text-align: center;
     padding: 0px 50px;
+    margin: 0;
 }
 
 .titlu-ponturi {
@@ -183,6 +184,12 @@
     font-weight: bold;
     text-align: center;
     padding: 50px 0px;
+    margin: 0;
+}
+
+.continut-resurse{
+    background-color: #F2F3F6;
+    margin: 0px -8px 0px -8px;
 }
 
 .continut-ponturi {
@@ -215,8 +222,8 @@
 }
 
 .links-r {
-    margin: 0px 120px;
-    margin-bottom: 50px;
+    padding: 0px 120px;
+    padding-bottom: 50px;
     font-size: 20px;
 }
 
@@ -450,6 +457,7 @@
     align-items: center;
     background-color: #F2F3F6;
     padding: 20px 50px;
+    margin: 0px -8px 0px -8px;
 }
 
 .box {
@@ -458,8 +466,4 @@
     padding: 20px;
     margin: 20px 0px;
     text-align: center;
-}
-
-.about-body {
-    margin: 0;
 }
