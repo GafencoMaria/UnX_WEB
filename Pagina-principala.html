@@ -10,6 +10,16 @@
             <img class="logo" src="imagini/logo.jpg">
             <button onclick="menuDropdown()" class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
             <div id="dropMenu" class="drop-menu">
+                <button onclick="dropdown()" class="buton-drop-meniu-criterii">Criterii
+                    <img class="sageata" src="imagini/sageata.png">
+                    </button>
+                    <div id="dropdown" class="dropdown-drop-content">
+                        <button id="crit" onclick="activeChoice()" class="criteriu-drop">Judet</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu-drop">Nivel Educatie</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu-drop">Varsta</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu-drop">Mediu</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu-drop">Perioada de timp</button>
+                    </div>
                 <a class="link-meniu" href="Pagina-principala.html"><button class="buton-drop-meniu-acasa buton-on">Acasă</button></a>
                 <a class="link-meniu" href="about.html"><button class="buton-drop-meniu-despre">Despre noi</button></a>
                 <a class="link-meniu" href="Resurse.html"><button class="buton-drop-meniu-resurse">Mai multe resurse</button></a>
@@ -19,20 +29,11 @@
                     <img class="sageata" src="imagini/sageata.png">
                     </button>
                     <div id="dropdown" class="dropdown-content">
-                        <div class="criteriu">
-                            <p class="titlu-criteriu">Judet</p>
-                        <div class="criteriu">
-                            <p class="titlu-criteriu">Nivel Educatie</p>
-                        </div>
-                        <div class="criteriu">
-                            <p class="titlu-criteriu">Varsta</p>
-                        </div>
-                        <div class="criteriu">
-                            <p class="titlu-criteriu">Mediu</p>
-                        </div>
-                        <div class="criteriu">
-                            <p class="titlu-criteriu">Perioada de timp</p>
-                        </div>
+                        <button id="crit" onclick="activeChoice()" class="criteriu">Judet</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu">Nivel Educatie</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu">Varsta</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu">Mediu</button>
+                        <button id="crit" onclick="activeChoice()" class="criteriu">Perioada de timp</button>
                   </div>
                 </li>
                 <li><a class="link-meniu" href="Pagina-principala.html"><button class="buton-meniu-acasa buton-on">Acasă</button></a></li>
@@ -81,6 +82,9 @@
               document.getElementById("dropMenu").classList.toggle("showMenu");
             }
             
+            // function activeChoice() {
+            //     document.getElementById("crit").classList.toggle("activeButton");
+            // }
             // window.onclick = function(event) {
             //   if (!event.target.matches('.buton-meniu-criterii')) {
             //     var dropdowns = document.getElementsByClassName("dropdown-content");
