@@ -1,0 +1,138 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F3F6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header Styles */
+.header {
+    background-color: #BFD6E9;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.meniu-toggle {
+    display: none;
+}
+
+.meniu {
+    list-style: none;
+    display: flex;
+}
+
+.meniu li {
+    margin-right: 20px;
+}
+
+.meniu li:last-child {
+    margin-right: 0;
+}
+
+.buton-meniu-criterii,
+.buton-meniu-despre,
+.buton-meniu-resurse,
+.buton-meniu-acasa {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buton-meniu-criterii:hover,
+.buton-meniu-despre:hover,
+.buton-meniu-resurse:hover,
+.buton-meniu-acasa:hover {
+    background-color: #DEEAF1;
+}
+
+.sageata {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Content Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #365A86;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .meniu {
+        display: none;
+    }
+
+    .meniu-toggle {
+        display: block;
+    }
+
+    .meniu-toggle img {
+        width: 30px;
+        height: auto;
+    }
+
+    .box {
+        flex-basis: 80%;
+    }
+}
