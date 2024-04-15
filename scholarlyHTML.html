@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Report</title>
+</head>
+<style>
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<body prefix="schema: http://schema.org">
+<header>
+    <h1>UnX_WEB</h1>
+</header>
+<div roler="contentinfo">
+    <dl>
+        <dt>Authors</dt>
+        <dd>
+            Blaga Alexandra
+            &amp;
+            Gafenco Maria Alexandra
+        </dd>
+        <dt>Repository</dt>
+        <dd>
+            <a href="https://github.com/GafencoMaria/UnX_WEB/tree/main">Public Repository</a>
+        </dd>
+    </dl>
+</div>
+<section id="introduction" role="doc-introduction">
+    <h2>1. Introduction</h2>
+    <section id=purpose>
+        <h3>1.1 Purpose</h3>
+        <p>
+            This document is meant to highlight the software requirements for the <code>Web Technologies</code>
+            course project entitled <code>UnX</code>
+        </p>
+    </section>
+    <section id="scope">
+        <h3>1.2 Product Scope</h3>
+        <p>
+            <code>UnX</code> is a management software product that aims to provide its users with
+            data regarding the statistics of the unemployment rate.
+        </p>
+    </section>
+</section>
+<section id="description">
+    <h2>2. Overall Description</h2>
+    <section id="functions">
+        <h3>2.1 Product Functions</h3>
+        <p>
+            The web application is expected to perform the following functionalities:
+        </p>
+        <ul>
+            <li>
+                Provide access to information regarding unemployment rate from different romanian cities.
+            </li>
+            <li>
+                Visualize the data using a chart bar, a bubble chart, and a map of the romanian cities.
+            </li>
+            <li>
+                The option to download the charts from the website in SVG/WebP format.
+            </li>
+            <li>
+                The option to download the available data in CVS format.
+            </li>
+        </ul>
+    </section>
+    <section id="user-characteristics">
+        <h3>2.2 User Classes and Characteristics</h3>
+        <p>
+            There are two categories of users:
+        </p>
+        <ol>
+            <li>Guest users have the following characteristics:
+                <ul>
+                    <li>Access to overview statistics.</li>
+                    <li>Can download the informations.</li>
+                    <li>The users can compare the data.</li>
+                </ul>
+            </li>
+            <li>
+                Admins
+                <ul>
+                    <li>The application also provides access to a ranking of cities in terms of unemployment rate. </li>
+                    <li>Additionally, a user can compare the information between different cities regarding
+                        joblessness.</li>
+                    <li>The administrator of the application could access the database and could delete/modify the
+                        existing information.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <section id="operating-environment">
+        <h3>2.3 Operating Environment</h3>
+        <p>The following technologies have been used. It is important to mention that no frameworks have been used,
+            according to the <code>Web Technologies </code> requirements.
+        </p>
+        <p>
+            Front-end technologies: HTML, CSS, JavaScript
+        </p>
+
+
+    </section>
+    <section id="Usage-manual">
+        <h3>2.4 Usage Manual</h3>
+        <ol>
+            <li>
+                Overview
+                <p>
+                    Upon accessing the platform, the user will see information regarding unemployment statistics in Romania and
+                    in the top part the navigation bar with the purpose of navigating through the pages.
+                </p>
+            </li>
+            <li>
+                Criterii
+                <p>
+                    The dropdown that allows the users to pick and choose the criteria for the visualisation tool.
+                </p>
+
+            </li>
+            <li>
+                Acasa
+                <p>
+                    The home page of the application.
+                </p>
+
+            </li>
+            <li>
+                Despre noi
+                <p>
+                    General information regarding the creators of the web tool.
+                </p>
+            </li>
+            <li>
+                Mai multe resurse
+                <p>
+                    More resources related to unemployment, as well as tips for job interviews.
+                </p>
+            </li>
+            <li>
+                Login
+                <p>
+                    A login page exclusivley for registered admins.
+                </p>
+            </li>
+        </ol>
+    </section>
+</section>
+<section id="Communication-interfaces">
+    <h2>3. Communication Interfaces</h2>
+    <ol>
+        <li>
+            Login
+        </li>
+        <ul>
+            <li>Username field</li>
+            <li>Password field</li>
+            <li>Buttons for completing the actions</li>
+        </ul>
+        <li>
+            Criterii
+        </li>
+        <ul>
+            <li>The users are presented with the possibility of visualizing the table data with the help of the
+                slector.</li>
+        </ul>
+        <li>
+            Charts
+            <ul>
+                <li>
+                    The data is presented using three types of charts.
+                </li>
+                <li>
+                    Buttons to download the charts in CSV, SVG or PDF format.
+                </li>
+            </ul>
+
+        </li>
+        <ul>
+
+        </ul>
+    </ol>
+</section>
+<section id="features">
+    <h2>4. System Features</h2>
+    <section id="login">
+        <h3>4.1 Admin Authentication</h3>
+    </section>
+    <section id="overview">
+        <h3>4.2 Data Visualisation</h3>
+        <section id="chatrs">
+            <h4> Charts</h4>
+            <p> The charts provides the following functionalities: </p>
+            <ul>
+                <li>Visualize the data using the three types of charts.
+                </li>
+
+            </ul>
+        </section>
+
+
+    </section>
+    <section id="security">
+        <h2>5. Security Requirements</h2>
+        <p>The following security requirements are taken into account: </p>
+        <ol>
+            <li>Use encryption algorithms</li>
+            <li>Prevent SQL injection</li>
+        </ol>
+    </section>
+</section>
+
+</body>
+
+</html>
