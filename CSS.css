@@ -126,7 +126,7 @@
     font-weight: bold;
 }
 
-.stiri, :link, :visited, :active {
+.stiri, :link, :visited {
     color: black;
 }
 
