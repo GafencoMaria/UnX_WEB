@@ -8,7 +8,12 @@
     <body class="resurse-body">
         <div class="header">
             <img class="logo" src="imagini/logo.jpg">
-            <button class="buton-meniu-toggle" onclick="toggleMenu();"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
+            <button onclick="menuDropdown()" class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
+            <div id="dropMenu" class="drop-menu">
+                <a class="link-meniu" href="Pagina-principala.html"><button class="buton-drop-meniu-acasa">Acasă</button></a>
+                <a class="link-meniu" href="about.html"><button class="buton-drop-meniu-despre">Despre noi</button></a>
+                <a class="link-meniu" href="Resurse.html"><button class="buton-drop-meniu-resurse buton-on">Mai multe resurse</button></a>
+            </div>
             <ul class="meniu">
                 <li><a class="link-meniu" href="Pagina-principala.html"><button class="buton-meniu-acasa">Acasă</button></a></li>
                 <li><a class="link-meniu" href="about.html"><button class="buton-meniu-despre">Despre noi</button></a></li>
@@ -48,5 +53,10 @@
             <p class="rights">All rights reserved</p>
             <p class="contact">Contacteaza-ne</p>
         </div>
+        <script>
+            function menuDropdown() {
+              document.getElementById("dropMenu").classList.toggle("showMenu");
+            }
+        </script>
     </body>
     </html>

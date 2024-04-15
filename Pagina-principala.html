@@ -8,7 +8,12 @@
     <body>
         <div class="header">
             <img class="logo" src="imagini/logo.jpg">
-            <button class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
+            <button onclick="menuDropdown()" class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
+            <div id="dropMenu" class="drop-menu">
+                <a class="link-meniu" href="Pagina-principala.html"><button class="buton-drop-meniu-acasa buton-on">Acasă</button></a>
+                <a class="link-meniu" href="about.html"><button class="buton-drop-meniu-despre">Despre noi</button></a>
+                <a class="link-meniu" href="Resurse.html"><button class="buton-drop-meniu-resurse">Mai multe resurse</button></a>
+            </div>
             <ul class="meniu">
                 <li><button onclick="dropdown()" class="buton-meniu-criterii">Criterii
                     <img class="sageata" src="imagini/sageata.png">
@@ -16,7 +21,6 @@
                     <div id="dropdown" class="dropdown-content">
                         <div class="criteriu">
                             <p class="titlu-criteriu">Judet</p>
-                        </div>
                         <div class="criteriu">
                             <p class="titlu-criteriu">Nivel Educatie</p>
                         </div>
@@ -72,19 +76,23 @@
             function dropdown() {
               document.getElementById("dropdown").classList.toggle("show");
             }
-            
-            window.onclick = function(event) {
-              if (!event.target.matches('.buton-meniu-criterii')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
+
+            function menuDropdown() {
+              document.getElementById("dropMenu").classList.toggle("showMenu");
             }
+            
+            // window.onclick = function(event) {
+            //   if (!event.target.matches('.buton-meniu-criterii')) {
+            //     var dropdowns = document.getElementsByClassName("dropdown-content");
+            //     var i;
+            //     for (i = 0; i < dropdowns.length; i++) {
+            //       var openDropdown = dropdowns[i];
+            //       if (openDropdown.classList.contains('show')) {
+            //         openDropdown.classList.remove('show');
+            //       }
+            //     }
+            //   }
+            // }
             </script>
     </body>
     </html>
