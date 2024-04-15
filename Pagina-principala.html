@@ -8,11 +8,17 @@
     <body>
         <div class="header">
             <img class="logo" src="imagini/logo.jpg">
-            <button class="buton-meniu-toggle" onclick="toggleMenu();"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
+            <button class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
             <ul class="meniu">
-                <li><button class="buton-meniu-criterii">Criterii
+                <li><button onclick="dropdown()" class="buton-meniu-criterii">Criterii
                     <img class="sageata" src="imagini/sageata.png">
-                </button></li>
+                    </button>
+                    <div id="dropdown" class="dropdown-content">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                  </div>
+                </li>
                 <li><a class="link-meniu" href="Pagina-principala.html"><button class="buton-meniu-acasa buton-on">Acasă</button></a></li>
                 <li><button class="buton-meniu-despre">Despre noi</button></li>
                 <li><a class="link-meniu" href="Resurse.html"><button class="buton-meniu-resurse">Mai multe resurse</button></a></li>
@@ -50,5 +56,23 @@
             <p class="rights">All rights reserved</p>
             <p class="contact">Contacteaza-ne</p>
         </div>
+        <script>
+            function dropdown() {
+              document.getElementById("dropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.buton-meniu-criterii')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
     </body>
     </html>
