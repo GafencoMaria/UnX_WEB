@@ -10,10 +10,10 @@
             <img class="logo" src="imagini/logo.jpg">
             <button onclick="menuDropdown()" class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
             <div id="dropMenu" class="drop-menu">
-                <button onclick="dropdown()" class="buton-drop-meniu-criterii">Criterii
+                <button onclick="dropdown2()" class="buton-drop-meniu-criterii">Criterii
                     <img class="sageata" src="imagini/sageata.png">
                     </button>
-                    <div id="dropdown" class="dropdown-drop-content">
+                    <div id="dropdown2" class="dropdown-drop-content">
                         <button id="crit" onclick="activeChoice()" class="criteriu-drop">Judet</button>
                         <button id="crit" onclick="activeChoice()" class="criteriu-drop">Nivel Educatie</button>
                         <button id="crit" onclick="activeChoice()" class="criteriu-drop">Varsta</button>
@@ -80,6 +80,9 @@
 
             function menuDropdown() {
               document.getElementById("dropMenu").classList.toggle("showMenu");
+            }
+            function dropdown2() {
+              document.getElementById("dropdown2").classList.toggle("show2");
             }
             
             // function activeChoice() {
