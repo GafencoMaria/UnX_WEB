@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -20,7 +22,7 @@
                         <button id="crit" onclick="activeChoice()" class="criteriu-drop">Mediu</button>
                         <button id="crit" onclick="activeChoice()" class="criteriu-drop">Perioada de timp</button>
                     </div>
-                <a class="link-meniu" href="Pagina-principala.html"><button class="buton-drop-meniu-acasa buton-on">Acasă</button></a>
+                <a class="link-meniu" href="Pagina-principala.php"><button class="buton-drop-meniu-acasa buton-on">Acasă</button></a>
                 <a class="link-meniu" href="about.html"><button class="buton-drop-meniu-despre">Despre noi</button></a>
                 <a class="link-meniu" href="Resurse.html"><button class="buton-drop-meniu-resurse">Mai multe resurse</button></a>
             </div>
@@ -36,7 +38,7 @@
                         <button id="crit" onclick="activeChoice()" class="criteriu">Perioada de timp</button>
                   </div>
                 </li>
-                <li><a class="link-meniu" href="Pagina-principala.html"><button class="buton-meniu-acasa buton-on">Acasă</button></a></li>
+                <li><a class="link-meniu" href="Pagina-principala.php"><button class="buton-meniu-acasa buton-on">Acasă</button></a></li>
                 <li><a class="link-meniu" href="about.html"><button class="buton-meniu-despre">Despre noi</button></a></li>
                 <li><a class="link-meniu" href="Resurse.html"><button class="buton-meniu-resurse">Mai multe resurse</button></a></li>
             </ul>
