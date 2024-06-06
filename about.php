@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +13,13 @@
         <button onclick="menuDropdown()" class="buton-meniu-toggle"><img class="meniu-toggle" src="imagini/meniu.jpg"></button>
         <div id="dropMenu" class="drop-menu">
             <a class="link-meniu" href="Pagina-principala.php"><button class="buton-drop-meniu-acasa">Acasă</button></a>
-            <a class="link-meniu" href="about.html"><button class="buton-drop-meniu-despre buton-on">Despre noi</button></a>
-            <a class="link-meniu" href="Resurse.html"><button class="buton-drop-meniu-resurse">Mai multe resurse</button></a>
+            <a class="link-meniu" href="about.php"><button class="buton-drop-meniu-despre buton-on">Despre noi</button></a>
+            <a class="link-meniu" href="Resurse.php"><button class="buton-drop-meniu-resurse">Mai multe resurse</button></a>
         </div>
         <ul class="meniu">
             <li><a class="link-meniu" href="Pagina-principala.php"><button class="buton-meniu-acasa">Acasă</button></a></li>
-            <li><a class="link-meniu" href="about.html"><button class="buton-meniu-despre buton-on">Despre noi</button></a></li>
-            <li><a class="link-meniu" href="Resurse.html"><button class="buton-meniu-resurse">Mai multe resurse</button></a></li>
+            <li><a class="link-meniu" href="about.php"><button class="buton-meniu-despre buton-on">Despre noi</button></a></li>
+            <li><a class="link-meniu" href="Resurse.php"><button class="buton-meniu-resurse">Mai multe resurse</button></a></li>
         </ul>
     </div>
 </header>
